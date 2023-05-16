@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block main %}
+<div style="display:flex; flex-direction: column; text-align: center; align-items: center;margin-top: 100px;">
+    <h1 style="color: #333;font-size: 30px; margin-bottom: 100px;">Formulário de Pedido</h1>
+    <form action="enviar_pedido.php" method="post">
+      <label for="nome" style="font-weight: bold;">Nome:</label>
+      <input type="text" id="nome" name="nome" style="width: 200px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;" required><br><br>
+      <label for="endereco" style="font-weight: bold;">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" style="width: 200px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;" required><br><br>
+      <label for="telefone" style="font-weight: bold;">Telefone:</label>
+      <input type="tel" style="width: 200px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;" required><br><br>
+      <input type="submit" style="background-color: #333; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
+    </div>
+{% endblock %}
